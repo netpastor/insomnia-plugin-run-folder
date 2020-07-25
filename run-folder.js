@@ -16,10 +16,10 @@ module.exports.requestGroupActions = [
         var color = getStatusCodeColor(response.statusCode);
         var time = millisecToHumanReadable(response.elapsedTime);
         results.push(`<tr>
-                        <td id="td_left">[${request.method}] ${request.name}</td>
+                        <td id="td_left"><font color="#fff">[${request.method}] ${request.name}<font></td>
                         <td id="td_right"><font color="${color}">${response.statusCode} ${response.statusMessage}</font></td>
-                        <td id="td_right">${time}</td>
-                        <td id="td_right">${response.bytesRead}</td>
+                        <td id="td_right"><font color="#fff">${time}<font></td>
+                        <td id="td_right"><font color="#fff">${response.bytesRead}<font></td>
                       </tr>`);
       }
 
